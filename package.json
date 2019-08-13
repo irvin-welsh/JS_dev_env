@@ -2,11 +2,14 @@
   "name": "javascript-development-environment",
   "version": "1.0.0",
   "description": "JavaScript development environment ",
-  "scripts": {},
+  "scripts": {
+    "prestart": "babel-node building_scripts/welcome_message.js",
+    "start": "babel-node building_scripts/sourceserver.js"
+  },
   "author": "Irvin Welsh",
   "license": "ISC",
   "dependencies": {
-    "whatwg-fetch": "1.0.0"
+    "whatwg-fetch": "3.0.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
@@ -33,7 +36,7 @@
     "mocha": "6.2.0",
     "nock": "10.0.6",
     "npm-run-all": "4.1.5",
-    "nsp": "3.1.0",
+    "nsp": "3.2.1",
     "numeral": "2.0.6",
     "open": "6.4.0",
     "rimraf": "2.6.3",
